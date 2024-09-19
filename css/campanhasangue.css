@@ -49,10 +49,9 @@ nav ul li a:hover {
     background-color: #3A6043;
 }
 
-a{
+a {
     text-decoration: none;
-    list-style: none;
-    color:white;
+    color: white;
 }
 
 .search-profile {
@@ -146,4 +145,48 @@ main {
 
 .volunteer-btn:hover {
     background-color: #ff3333;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+    }
+
+    .info {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+    .logo img {
+        height: 80px;
+        width: 100px;
+    }
+
+    .search-profile {
+        margin-top: 10px;
+    }
+
+    .left-section, .right-section {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+
+    .info {
+        font-size: 1rem;
+    }
+
+    .learn-more, .volunteer-btn {
+        font-size: 0.9rem;
+    }
 }

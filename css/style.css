@@ -44,11 +44,11 @@ nav ul li a:hover {
     background-color: #3A6043;
 }
 
-a{
+a {
     text-decoration: none;
-    list-style: none;
-    color:white;
+    color: white;
 }
+
 /* Seção de Pesquisa e Perfil */
 .search-profile {
     display: flex;
@@ -170,12 +170,60 @@ button {
         width: 200px;
         height: 200px;
     }
-
     .button {
         font-size: 1rem;
     }
 
     .search-profile input {
         width: 150px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo img {
+        height: 80px;
+        width: 100px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .search-profile {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .campanha {
+        font-size: 1.6rem;
+    }
+
+    .button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .carousel-images img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .search-profile input {
+        width: 120px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    .logo img {
+        height: 60px;
+        width: 80px;
     }
 }

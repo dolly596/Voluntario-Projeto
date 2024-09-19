@@ -140,13 +140,58 @@ button:hover {
 @media screen and (max-width: 768px) {
     header {
         padding: 10px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .logo img {
+        height: 80px;
+        width: 100px;
+    }
+
+    .search-profile input {
+        width: 150px;
     }
 
     .container {
         width: 90%; /* Ajusta a largura para telas menores */
+        padding: 20px;
+    }
+}
+
+/* Ajustes para telas muito pequenas (smartphones) */
+@media screen and (max-width: 480px) {
+    .logo img {
+        height: 60px;
+        width: 80px;
+    }
+
+    .container {
+        width: 100%; /* Utiliza toda a largura da tela */
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 14px;
     }
 
     .search-profile input {
-        width: 150px; /* Ajuste da barra de pesquisa */
+        width: 120px;
     }
 }

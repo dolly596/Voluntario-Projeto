@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/voluntariar.css">
+    <title>Quero ser voluntário</title>
+</head>
+<body>
+
+    <!-- Header Padrão -->
+    <header>
+        <div class="logo">
+          <img src="img/Logo_nova-removebg-preview.png" alt="Logo Mapeando Solidariedade">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="feedback.html">Deixar feedback</a></li>
+            <li><a href="#">Meus trabalhos</a></li>
+          </ul>
+        </nav>
+        <div class="search-profile">
+          <input type="text" placeholder="Onde você está?">
+    
+          <div class="profile-icon">
+            <img src="img/Adriano-removebg-preview.png" alt="Perfil" class="perfil">
+          </div>
+        </div>
+      </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <div class="container">
+            <div class="left-section">
+                <div class="photo-upload">
+                    <div class="photo-circle">
+                        <img id="photo-preview" src="placeholder-image-icon.png" alt="Adicionar foto">
+                    </div>
+                    <label for="photo-input" class="custom-file-upload">Escolher Foto</label>
+                    <input type="file" id="photo-input" accept="image/*">
+                </div>
+            </div>
+
+            <div class="right-section">
+                <div class="form-container">
+                    <h2>Dados:</h2>
+                    <form>
+                        <input type="text" placeholder="Nome" required>
+                        <input type="date" placeholder="Data de Nascimento" required>
+                        <input type="text" placeholder="Objetivo" required>
+                        <input type="text" placeholder="Endereço" required>
+                        <button type="submit">Finalizar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/voluntariar.js"></script>
+</body>
+</html>

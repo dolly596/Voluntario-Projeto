@@ -1,0 +1,181 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #004d00;
+    color: white;
+}
+
+/* Logo */
+.logo img {
+    height: 100px;
+    width: 120px;
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-family: Arial, sans-serif;
+    border: #a8f5b6 2px solid;
+    font-weight: bold;
+    background-color: #4C7353;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #3A6043;
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+    color:white;
+}
+/* Seção de Pesquisa e Perfil */
+.search-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-profile input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.search-button {
+    background-color: #4C7353;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #3A6043;
+}
+
+/* Perfil */
+.profile-icon img.perfil {
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid green;
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+/* Seção de Campanhas */
+.campanha {
+    font-weight: bold;
+    font-size: 2.3rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.button {
+    background-color: #7C987C;
+    font-size: 0.8rem;
+    color: white;
+    margin-right: 5%;
+    padding: 10px 10px;
+    border: 1px solid #597259;
+    border-radius: 30px;
+    text-align: center;
+}
+
+/* Carrossel */
+.carousel {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-container {
+    width: 90%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-images img {
+    width: 250px;
+    height: 250px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .campanha {
+        font-size: 2rem;
+        margin-left: 2%;
+    }
+
+    .carousel-images img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .button {
+        font-size: 1rem;
+    }
+
+    .search-profile input {
+        width: 150px;
+    }
+}
